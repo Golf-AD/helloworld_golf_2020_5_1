@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:helloworld_golf/screens/LayoutPage.dart';
 import 'package:helloworld_golf/screens/MenuPage.dart';
+import 'package:helloworld_golf/screens/SearchPage.dart';
+import 'package:helloworld_golf/screens/SignupPage.dart';
 import 'package:helloworld_golf/screens/StackPage.dart';
  
 import '../main.dart';
@@ -40,7 +42,9 @@ class _NavDrawerState extends State<NavDrawer> {
           //===================================================           
           ListTile(leading: Icon(Icons.language), title: Text('Main Menu'),onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => MenuPage()),)},),   
           ListTile(leading: Icon(Icons.border_color), title: Text('Layout'),onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => LayoutPage()),)},),   
-          ListTile(leading: Icon(Icons.settings), title: Text('Stack'),onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => StackPage()),)},),   
+          ListTile(leading: Icon(Icons.settings), title: Text('Stack'),onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => StackPage()),)},),  
+          ListTile(leading: Icon(Icons.find_replace), title: Text('Search'),onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => SearchPage()),)},), 
+          ListTile(leading: Icon(Icons.supervisor_account), title: Text('Signup'),onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => SignupPage()),)},), 
           ListTile(leading: Icon(Icons.exit_to_app), title: Text('Logout'),onTap: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => MyApp()),)},),   
         ],
  
