@@ -45,13 +45,12 @@ android {
         minSdkVersion 16
         targetSdkVersion 28
 
-        // Add this Line for use with firebase
-        multiDexEnabled true
-        // 
-
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        // Add this Line for use with firebase
+        multiDexEnabled true
+        // 
     }
 
     buildTypes {

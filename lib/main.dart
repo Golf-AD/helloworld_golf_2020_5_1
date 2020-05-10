@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:helloworld_golf/screens/Ep2Page.dart';
 import 'package:helloworld_golf/screens/LayoutPage.dart';
 import 'package:helloworld_golf/screens/MenuPage.dart';
+import 'package:helloworld_golf/screens/RMenuCatNew.dart';
+import 'package:helloworld_golf/screens/RMenuNew.dart';
 import 'package:helloworld_golf/screens/SearchPage.dart';
 import 'package:helloworld_golf/screens/SignupPage.dart';
 import 'package:helloworld_golf/screens/StackPage.dart';
@@ -106,8 +109,9 @@ class _MyHomePageState extends State<MyHomePage> {
             RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => StackPage()),);}, child: Text('Stack Page'),color: Colors.yellow,),  
             RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => SearchPage()),);}, child: Text('Search Page'),color: Colors.green,),  
             RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => SignupPage()),);}, child: Text('Signup Page'),color: Colors.blue,),  
-
-
+            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => Ep2Page()),);}, child: Text('EP2 Page'),color: Colors.green,), 
+            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => RMenuCatNew()),);}, child: Text('R Create Category'),color: Colors.red,), 
+            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => RMenuNew()),);}, child: Text('R Create Food Menu'),color: Colors.red,),
             //---------------
             //
             //---------------
@@ -126,6 +130,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.display1,
+              //style: Theme.of(context).textTheme.display1,
             ),
           ],
         ),
