@@ -5,6 +5,7 @@ import 'package:helloworld_golf/screens/LayoutPage.dart';
 import 'package:helloworld_golf/screens/MenuPage.dart';
 import 'package:helloworld_golf/screens/RMenuCatNew.dart';
 import 'package:helloworld_golf/screens/RMenuNew.dart';
+import 'package:helloworld_golf/screens/RMenuSearchPage.dart';
 import 'package:helloworld_golf/screens/SearchPage.dart';
 import 'package:helloworld_golf/screens/SignupPage.dart';
 import 'package:helloworld_golf/screens/StackPage.dart';
@@ -53,7 +54,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  // int _counter = 0;
 
   void _incrementCounter() {
     setState(() {
@@ -62,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // so that the display can reflect the updated values. If we changed
       // _counter without calling setState(), then the build method would not be
       // called again, and so nothing would appear to happen.
-      _counter++;
+      // _counter++;
     });
   }
 
@@ -114,6 +115,9 @@ class _MyHomePageState extends State<MyHomePage> {
             RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => RMenuCatNew()),);}, child: Text('R Create Category'),color: Colors.orangeAccent,), 
             RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => RMenuNew()),);}, child: Text('R Create Food Menu'),color: Colors.yellowAccent,),
             RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => GFlutterNew()),);}, child: Text('Golf Flutter'),color: Colors.redAccent,),
+            RaisedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context) => RMenuSearchPage()),);}, child: Text('Serch Menu Page'),color: Colors.redAccent,),
+            
+            
             //---------------
             //
             //---------------
@@ -129,11 +133,11 @@ class _MyHomePageState extends State<MyHomePage> {
             //--------------
             
             
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-              //style: Theme.of(context).textTheme.display1,
-            ),
+            // Text(
+            //   '$_counter',
+            //   style: Theme.of(context).textTheme.display1,
+            //   //style: Theme.of(context).textTheme.display1,
+            // ),
           ],
         ),
       ),
